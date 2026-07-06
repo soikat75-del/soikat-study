@@ -1,1 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     fill="none">
 
+    <!-- Cap -->
+    <path d="M8 22L32 12L56 22L32 32L8 22Z"
+          stroke="currentColor"
+          stroke-width="2.8"
+          stroke-linejoin="round"/>
+
+    <!-- Head band -->
+    <path d="M18 27V34C18 39 24 43 32 43C40 43 46 39 46 34V27"
+          stroke="currentColor"
+          stroke-width="2.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Tassel -->
+    <path d="M56 22V34"
+          stroke="currentColor"
+          stroke-width="2.8"
+          stroke-linecap="round"/>
+
+    <circle cx="56" cy="37" r="2.2"
+            fill="currentColor"/>
+
+    <!-- Book -->
+    <path d="M20 47
+             C24 45 28 45 32 48
+             C36 45 40 45 44 47"
+          stroke="currentColor"
+          stroke-width="2.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+</svg>
