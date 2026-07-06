@@ -222,4 +222,79 @@
 
     }
 
+   /* ==========================================
+   Search Results
+========================================== */
+
+.search-section{
+    position: relative;
+}
+
+.search-results{
+
+    position:absolute;
+
+    top:100%;
+    left:0;
+
+    width:100%;
+
+    margin-top:10px;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    overflow:hidden;
+
+    display:none;
+
+    z-index:999;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.search-item{
+
+    padding:16px 18px;
+
+    cursor:pointer;
+
+    transition:background .2s;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.search-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.search-item:hover{
+
+    background:var(--surface-hover);
+
+}
+
+.search-item h4{
+
+    font-size:15px;
+
+}
+
+.search-item p{
+
+    margin-top:4px;
+
+    font-size:13px;
+
+    color:var(--text-muted);
+
+}
+
 }
