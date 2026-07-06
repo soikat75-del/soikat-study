@@ -19,9 +19,8 @@
 
     gap:40px;
 
-    padding-bottom:32px;
-
-    margin-bottom:32px;
+    padding-bottom:20px;
+margin-bottom:24px;
 
     border-bottom:1px solid var(--border);
 
@@ -82,32 +81,30 @@
 
 .clock{
 
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+
+    gap:4px;
+
     text-align:right;
 
 }
 
 #weekday{
-
+    font-size:.9rem;
     font-weight:600;
-
-    margin-bottom:4px;
-
 }
 
 #date{
-
+    font-size:.85rem;
     color:var(--text-muted);
-
-    margin-bottom:6px;
-
 }
 
 #time{
-
-    font-size:2rem;
-
+    font-size:1.45rem;
     font-weight:700;
-
+    line-height:1.2;
 }
 
 /* ================= Search ================= */
