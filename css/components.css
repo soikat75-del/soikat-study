@@ -101,27 +101,25 @@
 /* ---------- Card Icon ---------- */
 
 .card-icon{
-
     width:56px;
-
     height:56px;
 
-    border-radius:16px;
-
     display:flex;
-
+    align-items:center;
     justify-content:center;
 
-    align-items:center;
-
     margin-bottom:24px;
+
+    border-radius:16px;
 
     background:rgba(88,166,255,.10);
 
     color:var(--primary);
+}
 
-    font-size:24px;
-
+.card-icon svg{
+    width:26px;
+    height:26px;
 }
 
 /* ---------- Card Text ---------- */
