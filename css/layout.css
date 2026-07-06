@@ -130,39 +130,6 @@
     color: var(--text);
 }
 
-/* ---------- Hero ---------- */
-
-.hero {
-    margin-bottom: 2.5rem;
-}
-
-.hero-content {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    padding: 2.5rem;
-}
-
-.hero-label {
-    display: inline-block;
-    margin-bottom: 1rem;
-    color: var(--primary);
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: .12em;
-}
-
-.hero-content h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    max-width: 700px;
-}
-
-.hero-content p {
-    max-width: 700px;
-    line-height: 1.8;
-}
-
 /* ---------- Dashboard ---------- */
 
 .dashboard {
