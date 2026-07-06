@@ -1,90 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Soikat BCS Hub</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            font-family:Poppins,sans-serif;
+        }
+
+        body{
+
+            background:#0B1120;
+
+        }
+
+        .glass{
+
+            background:rgba(255,255,255,.04);
+
+            backdrop-filter:blur(18px);
+
+            border:1px solid rgba(255,255,255,.08);
+
+        }
+
+        .card{
+
+            transition:.25s;
+
+        }
+
+        .card:hover{
+
+            transform:translateY(-6px);
+
+            border-color:#3B82F6;
+
+        }
+
+    </style>
+
 </head>
 
-<body>
+<body class="text-white">
 
-<header>
+<!-- ================= HEADER ================= -->
 
-<a href="index.html" class="logo">
+<header
+class="glass
+sticky
+top-0
+z-50
+px-8
+py-5
+flex
+items-center
+justify-between">
 
-🎓 <span>Soikat BCS Hub</span>
+<a
+href="index.html"
+class="flex items-center gap-3 text-2xl font-bold">
+
+<div
+class="w-11
+h-11
+rounded-xl
+bg-blue-600
+flex
+items-center
+justify-center">
+
+<i data-lucide="graduation-cap"></i>
+
+</div>
+
+<span>
+
+Soikat BCS Hub
+
+</span>
 
 </a>
 
-<div class="search">
+<div
+class="hidden
+md:flex
+items-center
+gap-4">
+
+<div
+class="relative">
 
 <input
+
+id="search"
+
 type="text"
-placeholder="Search...">
+
+placeholder="Search..."
+
+class="w-80
+bg-slate-900
+border
+border-slate-700
+rounded-xl
+py-3
+pl-12
+pr-4
+outline-none
+focus:border-blue-500">
+
+<i
+data-lucide="search"
+
+class="absolute
+left-4
+top-3.5
+w-5
+h-5
+text-slate-400">
+
+</i>
+
+</div>
+
+<button
+
+class="w-11
+h-11
+rounded-xl
+bg-slate-800
+hover:bg-slate-700">
+
+<i
+data-lucide="moon"
+class="mx-auto">
+
+</i>
+
+</button>
 
 </div>
 
 </header>
 
-<main>
+<!-- ================= MAIN ================= -->
 
-    <!-- Top Info -->
-    <section class="top-info">
+<main class="max-w-7xl mx-auto px-6 py-10">
 
-        <div class="info-card">
-            <span>📅 Today</span>
-            <h2 id="todayDate">Loading...</h2>
+<!-- TOP BAR -->
+
+<section
+class="glass
+rounded-3xl
+p-8
+mb-10">
+
+<div
+class="grid
+grid-cols-1
+lg:grid-cols-3
+gap-8">
+
+<!-- DATE -->
+
+<div>
+
+<p class="text-slate-400 mb-2">
+
+Today
+
+</p>
+
+<h2
+
+id="todayDate"
+
+class="text-3xl font-bold">
+
+Loading...
+
+</h2>
+
+</div>
+
+<!-- TIME -->
+
+<div>
+
+<p class="text-slate-400 mb-2">
+
+Time
+
+</p>
+
+<h2
+
+id="liveTime"
+
+class="text-3xl font-bold
+text-blue-400">
+
+Loading...
+
+</h2>
+
+</div>
+
+<!-- EXAM -->
+
+<div>
+
+<p class="text-slate-400 mb-2">
+
+Next Exam
+
+</p>
+
+<h2
+
+class="text-2xl font-semibold">
+
+No Exam Scheduled
+
+</h2>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= DASHBOARD ================= -->
+
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- Subjects -->
+
+    <a href="pages/subjects.html"
+       class="card glass rounded-3xl p-8">
+
+        <div
+        class="w-16 h-16 rounded-2xl
+        bg-blue-600/20
+        flex items-center justify-center
+        mb-6">
+
+            <i
+            data-lucide="book-open"
+            class="text-blue-400 w-8 h-8">
+            </i>
+
         </div>
 
-        <div class="info-card">
-            <span>🕒 Time</span>
-            <h2 id="liveTime">Loading...</h2>
+        <h2 class="text-2xl font-semibold mb-2">
+            Subjects
+        </h2>
+
+        <p class="text-slate-400">
+            Browse all BCS subjects,
+            notes, PDFs and MCQs.
+        </p>
+
+    </a>
+
+    <!-- Strategy -->
+
+    <a href="pages/strategy.html"
+       class="card glass rounded-3xl p-8">
+
+        <div
+        class="w-16 h-16 rounded-2xl
+        bg-emerald-600/20
+        flex items-center justify-center
+        mb-6">
+
+            <i
+            data-lucide="target"
+            class="text-emerald-400 w-8 h-8">
+            </i>
+
         </div>
 
-        <div class="info-card">
-            <span>🎯 Next Exam</span>
-            <h2>No Exam Set</h2>
+        <h2 class="text-2xl font-semibold mb-2">
+            Strategy
+        </h2>
+
+        <p class="text-slate-400">
+            Books, routines,
+            preparation plans
+            and resources.
+        </p>
+
+    </a>
+
+    <!-- Study Tracker -->
+
+    <a href="pages/tracker.html"
+       class="card glass rounded-3xl p-8">
+
+        <div
+        class="w-16 h-16 rounded-2xl
+        bg-orange-500/20
+        flex items-center justify-center
+        mb-6">
+
+            <i
+            data-lucide="chart-column"
+            class="text-orange-400 w-8 h-8">
+            </i>
+
         </div>
 
-    </section>
+        <h2 class="text-2xl font-semibold mb-2">
+            Study Tracker
+        </h2>
 
-    <!-- Dashboard -->
-    <section class="dashboard">
+        <p class="text-slate-400">
+            Track daily study,
+            revision,
+            targets and streaks.
+        </p>
 
-        <a href="pages/subjects.html" class="dashboard-card">
-            <div class="card-icon">📚</div>
-            <h3>Subjects</h3>
-            <p>Browse all BCS subjects</p>
-        </a>
+    </a>
 
-        <a href="pages/strategy.html" class="dashboard-card">
-            <div class="card-icon">🎯</div>
-            <h3>Strategy</h3>
-            <p>Books, Plans & Resources</p>
-        </a>
+    <!-- Planner -->
 
-        <a href="pages/tracker.html" class="dashboard-card">
-            <div class="card-icon">📈</div>
-            <h3>Study Tracker</h3>
-            <p>Track your study journey</p>
-        </a>
+    <a href="pages/planner.html"
+       class="card glass rounded-3xl p-8">
 
-        <a href="pages/planner.html" class="dashboard-card">
-            <div class="card-icon">📅</div>
-            <h3>Planner</h3>
-            <p>Calendar, Notes & Countdown</p>
-        </a>
+        <div
+        class="w-16 h-16 rounded-2xl
+        bg-violet-600/20
+        flex items-center justify-center
+        mb-6">
 
-    </section>
+            <i
+            data-lucide="calendar-days"
+            class="text-violet-400 w-8 h-8">
+            </i>
+
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-2">
+            Planner
+        </h2>
+
+        <p class="text-slate-400">
+            Calendar,
+            exam countdown
+            and personal notes.
+        </p>
+
+    </a>
+
+</section>
+
+<!-- Quick Notes -->
+
+<section
+class="glass
+rounded-3xl
+p-8
+mt-8">
+
+<h2 class="text-xl font-semibold mb-4">
+
+Quick Notes
+
+</h2>
+
+<textarea
+
+placeholder="Write something..."
+
+class="w-full
+h-40
+bg-slate-900
+border
+border-slate-700
+rounded-2xl
+p-5
+resize-none
+outline-none
+focus:border-blue-500">
+
+</textarea>
+
+</section>
+
+<!-- Motivation -->
+
+<section
+class="glass
+rounded-3xl
+p-8
+mt-8
+mb-8">
+
+<h2 class="text-xl font-semibold mb-3">
+
+Today's Motivation
+
+</h2>
+
+<p class="text-slate-400 leading-8">
+
+Success in BCS is not about studying hard for one day,
+it's about showing up every single day.
+
+</p>
+
+</section>
 
 </main>
 
-<script src="assets/js/app.js"></script>
+<footer
+class="border-t
+border-slate-800
+py-8
+text-center
+text-slate-500">
+
+© 2026 Soikat BCS Hub
+
+</footer>
+
+<script>
+
+function updateClock(){
+
+const now=new Date();
+
+const date=now.toLocaleDateString("en-GB",{
+
+weekday:"long",
+
+day:"numeric",
+
+month:"long",
+
+year:"numeric",
+
+timeZone:"Asia/Dhaka"
+
+});
+
+const time=now.toLocaleTimeString("en-US",{
+
+hour:"2-digit",
+
+minute:"2-digit",
+
+second:"2-digit",
+
+hour12:true,
+
+timeZone:"Asia/Dhaka"
+
+});
+
+document.getElementById("todayDate").textContent=date;
+
+document.getElementById("liveTime").textContent=time;
+
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
+
+lucide.createIcons();
+
+</script>
 
 </body>
+
 </html>
