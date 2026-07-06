@@ -54,26 +54,30 @@ const quotes = [
 
 /* Future Search Database */
 
-const studyPages = [
+const searchDatabase = [
 
     {
-        title: "Subjects",
-        url: "pages/subjects.html"
+        title:"Subjects",
+        description:"Browse all BCS subjects",
+        url:"pages/subjects.html"
     },
 
     {
-        title: "Strategy",
-        url: "pages/strategy.html"
+        title:"Strategy",
+        description:"Preparation strategy",
+        url:"pages/strategy.html"
     },
 
     {
-        title: "Study Tracker",
-        url: "pages/tracker.html"
+        title:"Study Tracker",
+        description:"Track daily study",
+        url:"pages/tracker.html"
     },
 
     {
-        title: "Planner",
-        url: "pages/planner.html"
+        title:"Planner",
+        description:"Daily planner",
+        url:"pages/planner.html"
     }
 
 ];
