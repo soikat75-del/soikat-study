@@ -49,28 +49,45 @@
 
 /* ---------- Dashboard Cards ---------- */
 
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.card{
 
-    min-height: 240px;
+    display:flex;
+    flex-direction:column;
 
-    padding: 1.75rem;
+    padding:28px;
 
-    background: var(--surface);
+    min-height:240px;
 
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    background:linear-gradient(
+        180deg,
+        #161B22 0%,
+        #141920 100%
+    );
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
 
     transition:
-        transform var(--transition),
-        border-color var(--transition),
-        background var(--transition),
-        box-shadow var(--transition);
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
 
-    position: relative;
-    overflow: hidden;
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#58A6FF;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.35);
+
 }
 /* ===== Card Header ===== */
 
@@ -162,13 +179,25 @@
 
 .card h2{
 
+    font-size:1.35rem;
+
+    font-weight:700;
+
     margin-bottom:12px;
+
+    color:var(--text);
 
 }
 
 .card p{
 
-    line-height:1.7;
+    color:var(--text-muted);
+
+    line-height:1.8;
+
+    font-size:.95rem;
+
+    flex:1;
 
 }
 
