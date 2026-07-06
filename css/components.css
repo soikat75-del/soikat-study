@@ -336,5 +336,36 @@
     box-shadow:0 0 0 4px rgba(88,166,255,.12);
 
 }
+/* ---------- Card Icons ---------- */
+
+.card-icon{
+
+    width:56px;
+    height:56px;
+
+    border-radius:16px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:1.5rem;
+
+}
+
+.card-icon svg{
+
+    width:26px;
+    height:26px;
+
+}
+
+.blue{
+
+    background:rgba(88,166,255,.12);
+
+    color:#58A6FF;
+
+}
 
 }
