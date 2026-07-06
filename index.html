@@ -1,198 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Soikat BCS Hub</title>
-
-<link rel="stylesheet" href="assets/css/style.css">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#111827;
-    color:#fff;
-}
-
-header{
-    background:#1f2937;
-    padding:18px 30px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-header h2{
-    color:#3b82f6;
-}
-
-.search{
-    width:300px;
-    padding:10px;
-    border-radius:8px;
-    border:none;
-}
-
-.container{
-    display:flex;
-}
-
-.sidebar{
-    width:250px;
-    min-height:100vh;
-    background:#1f2937;
-    padding:20px;
-}
-
-.sidebar ul{
-    list-style:none;
-}
-
-.sidebar li{
-    padding:12px;
-    border-radius:8px;
-    margin-bottom:8px;
-    cursor:pointer;
-}
-
-.sidebar li:hover{
-    background:#374151;
-}
-
-.content{
-    flex:1;
-    padding:30px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#1f2937;
-    padding:25px;
-    border-radius:15px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.card:hover{
-    background:#2563eb;
-    transform:translateY(-5px);
-}
-
-.card h3{
-    margin-top:10px;
-}
-
-footer{
-    text-align:center;
-    padding:20px;
-    color:#888;
-}
-</style>
-
-</head>
-<body>
-
-<header>
-
-<h2>📚 Soikat BCS Hub</h2>
-
-<input class="search" placeholder="Search...">
-
-</header>
-
-<div class="container">
-
-<div class="sidebar">
-
-<ul>
-
-<li>🏠 Dashboard</li>
-<li>📖 বাংলা</li>
-<li>🇬🇧 English</li>
-<li>➗ গণিত</li>
-<li>🌏 বাংলাদেশ</li>
-<li>🌍 International</li>
-<li>🔬 Science</li>
-<li>💻 ICT</li>
-<li>🧠 Mental Ability</li>
-<li>⚖ Ethics</li>
-<li>📰 Current Affairs</li>
-<li>⭐ Favorites</li>
-
-</ul>
-
-</div>
-
-<div class="content">
-
-<h1>BCS Study Materials</h1>
-
-<br>
-
 <div class="grid">
 
 <div class="card">
-<h3>📖 বাংলা</h3>
-<p>Grammar, Literature, Previous Questions</p>
+    <div class="icon">📖</div>
+    <h3>বাংলা</h3>
+    <p>ব্যাকরণ • সাহিত্য • বিগত প্রশ্ন</p>
 </div>
 
 <div class="card">
-<h3>🇬🇧 English</h3>
-<p>Grammar, Vocabulary, Literature</p>
+    <div class="icon">🔤</div>
+    <h3>English</h3>
+    <p>Grammar • Vocabulary • Literature</p>
 </div>
 
 <div class="card">
-<h3>➗ গণিত</h3>
-<p>Math Shortcuts & Practice</p>
+    <div class="icon">🧮</div>
+    <h3>গণিত</h3>
+    <p>Shortcut • Practice • Formula</p>
 </div>
 
 <div class="card">
-<h3>🌏 বাংলাদেশ</h3>
-<p>History, Constitution, Economy</p>
+    <div class="icon">🇧🇩</div>
+    <h3>বাংলাদেশ বিষয়াবলি</h3>
+    <p>History • Constitution • Economy</p>
 </div>
 
 <div class="card">
-<h3>🌍 International</h3>
-<p>World Affairs & Organizations</p>
+    <div class="icon">🌍</div>
+    <h3>আন্তর্জাতিক বিষয়াবলি</h3>
+    <p>World • Organizations • Diplomacy</p>
 </div>
 
 <div class="card">
-<h3>🔬 Science</h3>
-<p>Physics, Chemistry, Biology</p>
+    <div class="icon">🧪</div>
+    <h3>বিজ্ঞান</h3>
+    <p>Physics • Chemistry • Biology</p>
 </div>
 
 <div class="card">
-<h3>💻 ICT</h3>
-<p>Computer & Technology</p>
+    <div class="icon">💻</div>
+    <h3>ICT</h3>
+    <p>Computer • Internet • Technology</p>
 </div>
 
 <div class="card">
-<h3>📰 Current Affairs</h3>
-<p>Daily Updated Information</p>
+    <div class="icon">🧠</div>
+    <h3>মানসিক দক্ষতা</h3>
+    <p>IQ • Logic • Problem Solving</p>
+</div>
+
+<div class="card">
+    <div class="icon">⚖️</div>
+    <h3>নৈতিকতা</h3>
+    <p>Ethics • Values • Governance</p>
+</div>
+
+<div class="card">
+    <div class="icon">📰</div>
+    <h3>Current Affairs</h3>
+    <p>Daily Update • Monthly Revision</p>
 </div>
 
 </div>
-
-</div>
-
-</div>
-
-<footer>
-
-Made for Personal BCS Preparation ❤️
-
-</footer>
-
-</body>
-</html>
