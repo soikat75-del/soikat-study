@@ -2,265 +2,272 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Soikat BCS Hub</title>
-    <meta name="description" content="A premium personal BCS study hub." />
-    <meta name="theme-color" content="#0D1117" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Soikat Study Hub</title>
 
-    <!-- CSS -->
+    <meta name="description"
+        content="Premium Personal Study Workspace">
+
+    <meta name="theme-color"
+        content="#0D1117">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-    <div class="app">
+<div class="app">
 
-        <!-- ================= HEADER ================= -->
-       <header class="header">
+<header class="header">
 
-    <div class="header-left">
+<div class="brand">
 
-        <a href="../index.html" class="logo">
+<div class="logo">
 
-            <span class="logo-mark">S</span>
+S
 
-            <span class="logo-text">
+</div>
 
-                <h1>SOIKAT STUDY HUB</h1>
+<div class="brand-info">
 
-                <small>A Premium Personal Study Workspace</small>
+<h1>
 
-            </span>
+SOIKAT STUDY HUB
 
-        </a>
+</h1>
 
-    </div>
+<p>
 
-    <div class="clock">
+Personal Study Workspace
 
-    <span id="weekday"></span>
+</p>
 
-    <span id="date"></span>
+</div>
 
-    <span id="time"></span>
+</div>
+
+<div class="clock">
+
+<div id="weekday"></div>
+
+<div id="date"></div>
+
+<div id="time"></div>
 
 </div>
 
 </header>
 
-        <!-- ================= SEARCH ================= -->
-        <section class="search-section">
+<section class="search">
 
-    <div class="search-box">
+<div class="search-wrapper">
 
-        <svg
-    class="search-icon"
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    viewBox="0 0 24 24"
-    fill="none">
+<div class="search-left">
 
-    <path
-        d="M21 21L16.65 16.65M11 18C7.134 18 4 14.866 4 11S7.134 4 11 4s7 3.134 7 7-3.134 7-7 7Z"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
+<svg class="search-icon"
+viewBox="0 0 24 24"
+fill="none">
+
+<circle
+cx="11"
+cy="11"
+r="7"
+stroke="currentColor"
+stroke-width="2"/>
+
+<path
+d="M20 20L17 17"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"/>
 
 </svg>
 
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Search everything..."
-            autocomplete="off">
+<input
 
-    </div>
+id="searchInput"
 
-    <div id="searchResults" class="search-results"></div>
+type="text"
+
+placeholder="Search everything..."
+
+autocomplete="off">
+
+</div>
+
+<div class="shortcut">
+
+Ctrl K
+
+</div>
+
+</div>
+
+<div
+id="searchResults"
+class="search-results">
+
+</div>
 
 </section>
 
-        <!-- ================= DASHBOARD ================= -->
-        <main class="dashboard">
+<main class="dashboard">
 
-    <!-- Subjects -->
+<a
+href="pages/subjects.html"
+class="card">
 
-    <a href="pages/subjects.html" class="card">
+<div class="card-icon">
 
-        <div class="card-top">
+📚
 
-            <div class="icon blue">
-
-                <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"/>
-                    <path d="M6.5 17A2.5 2.5 0 0 1 4 14.5V6
-                        A2 2 0 0 1 6 4H20V20H6
-                        A2 2 0 0 1 4 18"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linejoin="round"/>
-                </svg>
-
-            </div>
-
-        </div>
-
-        <h2>Subjects</h2>
-
-<p>Browse all study materials.</p>
-
-<div class="card-footer">
-    <span>Open</span>
-    <span class="arrow">→</span>
 </div>
+
+<h2>
+
+Subjects
+
+</h2>
+
+<p>
+
+Browse all study materials.
+
+</p>
 
 </a>
 
-    <!-- Strategy -->
+<a
+href="pages/strategy.html"
+class="card">
 
-    <a href="pages/strategy.html" class="card">
+<div class="card-icon">
 
-        <div class="card-top">
+🎯
 
-            <div class="icon orange">
-
-                <svg viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="8"
-                        stroke="currentColor"
-                        stroke-width="2"/>
-                    <circle cx="12" cy="12" r="2"
-                        fill="currentColor"/>
-                </svg>
-
-            </div>
-
-        </div>
-
-        <h2>Strategy</h2>
-
-<p>Preparation roadmap & resources.</p>
-
-<div class="card-footer">
-    <span>Open</span>
-    <span class="arrow">→</span>
 </div>
+
+<h2>
+
+Strategy
+
+</h2>
+
+<p>
+
+Preparation roadmap and resources.
+
+</p>
 
 </a>
 
-    <!-- Tracker -->
+<a
+href="pages/tracker.html"
+class="card">
 
-    <a href="pages/tracker.html" class="card">
+<div class="card-icon">
 
-        <div class="card-top">
+📈
 
-            <div class="icon green">
-
-                <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M5 16L9 12L12 15L19 8"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
-
-            </div>
-
-        </div>
-
-        <h2>Study Tracker</h2>
-
-<p>Track your learning progress.</p>
-
-<div class="card-footer">
-    <span>Open</span>
-    <span class="arrow">→</span>
 </div>
+
+<h2>
+
+Study Tracker
+
+</h2>
+
+<p>
+
+Track your learning progress.
+
+</p>
 
 </a>
 
-    <!-- Planner -->
+<a
+href="pages/planner.html"
+class="card">
 
-    <a href="pages/planner.html" class="card">
+<div class="card-icon">
 
-        <div class="card-top">
+📅
 
-            <div class="icon purple">
-
-                <svg viewBox="0 0 24 24" fill="none">
-                    <rect x="4" y="5"
-                        width="16"
-                        height="15"
-                        rx="2"
-                        stroke="currentColor"
-                        stroke-width="2"/>
-                    <path d="M8 3V7M16 3V7M4 10H20"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"/>
-                </svg>
-
-            </div>
-
-        </div>
-
-        <h2>Planner</h2>
-
-<p>Plan your daily study routine.</p>
-
-<div class="card-footer">
-    <span>Open</span>
-    <span class="arrow">→</span>
 </div>
+
+<h2>
+
+Planner
+
+</h2>
+
+<p>
+
+Plan your daily study routine.
+
+</p>
 
 </a>
 
 </main>
 
-        <!-- ================= QUOTE ================= -->
-        <section class="quote-card">
+<section class="quote-card">
 
-    <h3 class="quote-title">Daily Motivation</h3>
+<div class="quote-label">
 
-    <blockquote id="quote">
-        Discipline beats motivation.
-    </blockquote>
+DAILY MOTIVATION
+
+</div>
+
+<blockquote id="quote">
+
+Discipline beats motivation.
+
+</blockquote>
 
 </section>
 
-        <!-- ================= FOOTER ================= -->
-        <footer class="footer">
+<footer class="footer">
 
-            <span>Built for BCS Aspirants</span>
+<div>
 
-            <span>Version 0.1.0</span>
+Built for BCS Aspirants
 
-        </footer>
+</div>
 
-    </div>
+<div>
 
-    <!-- JavaScript -->
-    <script src="js/data.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/app.js"></script>
+Version 0.1.0
+
+</div>
+
+</footer>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/quotes.js"></script>
+<script src="js/search.js"></script>
+<script src="js/app.js"></script>
 
 </body>
-
 </html>
