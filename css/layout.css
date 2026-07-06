@@ -133,12 +133,10 @@
 
 /* ---------- Search ---------- */
 
-.search-section{
-
-    position:relative;
-
-    margin-bottom:2.5rem;
-
+.search-section {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .search-box{
@@ -201,12 +199,9 @@
 
 .dashboard {
     display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 1.5rem;
-
-    margin-bottom: 2.5rem;
+    grid-template-columns: repeat(4, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 /* ---------- Quote ---------- */
