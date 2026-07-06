@@ -13,16 +13,20 @@
 
 /* ---------- Header ---------- */
 
-.header {
-    min-height: var(--header-height);
+.header{
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display:flex;
 
-    gap: 2rem;
+    justify-content:space-between;
 
-    margin-bottom: 2.5rem;
+    align-items:center;
+
+    padding-bottom:2rem;
+
+    margin-bottom:2rem;
+
+    border-bottom:1px solid var(--border);
+
 }
 
 /* Paste starts here */
@@ -107,14 +111,24 @@
     flex-direction: column;
 }
 
-.logo-text h1 {
-    font-size: 1.4rem;
-    letter-spacing: .08em;
+.logo-text h1{
+
+    font-size:1.35rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
 }
 
-.logo-text small {
-    color: var(--text-muted);
-    margin-top: .2rem;
+.logo-text small{
+
+    margin-top:4px;
+
+    color:var(--text-muted);
+
+    font-size:.85rem;
+
 }
 
 /* ---------- Clock ---------- */
