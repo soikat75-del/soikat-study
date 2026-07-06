@@ -1,130 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Soikat BCS Hub</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<script src="https://unpkg.com/lucide@latest"></script>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-}
-
-body{
-background:#08111f;
-color:white;
-}
-
-.glass{
-background:#101b2d;
-border:1px solid #1c2a44;
-}
-
-.card{
-transition:.25s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-border-color:#2563eb;
-box-shadow:0 15px 40px rgba(37,99,235,.25);
-}
-
-</style>
+<link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
 
-<header class="glass h-20 flex items-center justify-between px-10">
+<header class="header">
 
-<a href="index.html"
-class="flex items-center gap-3 text-2xl font-bold">
+<div class="container">
 
-<div
-class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center">
+<a href="index.html" class="logo">
 
-<i data-lucide="graduation-cap"></i>
+<div class="logo-icon">
+
+🎓
 
 </div>
 
-<span>
+<div>
 
-Soikat BCS Hub
+<h2>Soikat BCS Hub</h2>
 
-</span>
+<p>Your Personal Study Hub</p>
+
+</div>
 
 </a>
 
-<div class="flex items-center gap-4">
-
-<div class="relative">
+<div class="search">
 
 <input
-
-id="search"
-
 type="text"
-
-placeholder="Search..."
-
-class="w-96 bg-[#08111f] border border-slate-700 rounded-xl py-3 pl-12 pr-5 outline-none focus:border-blue-500">
-
-<i
-
-data-lucide="search"
-
-class="absolute left-4 top-3.5 w-5 h-5 text-slate-500">
-
-</i>
+placeholder="Search subjects, notes...">
 
 </div>
-
-<button
-
-class="w-12 h-12 rounded-xl glass">
-
-<i data-lucide="moon"></i>
-
-</button>
 
 </div>
 
 </header>
 
-<main class="max-w-7xl mx-auto p-10">
+<main class="container">
 
-<div class="glass rounded-3xl p-8 mb-8">
-
-<div class="flex justify-between">
+<section class="topbar">
 
 <div>
 
-<p class="text-slate-400">
+<p class="small">
 
 Today
 
 </p>
 
-<h2
-
-id="todayDate"
-
-class="text-3xl font-bold mt-2">
+<h2 id="todayDate">
 
 Loading...
 
@@ -134,17 +75,13 @@ Loading...
 
 <div>
 
-<p class="text-slate-400">
+<p class="small">
 
 Time
 
 </p>
 
-<h2
-
-id="liveTime"
-
-class="text-3xl font-bold mt-2 text-blue-400">
+<h2 id="liveTime">
 
 Loading...
 
@@ -152,38 +89,21 @@ Loading...
 
 </div>
 
-<div>
+</section>
 
-<p class="text-slate-400">
+<section class="dashboard">
 
-Next Exam
+<a
+href="pages/subjects.html"
+class="card">
 
-</p>
+<h2>
 
-<h2 class="text-2xl mt-2">
-
-No Exam Scheduled
-
-</h2>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="grid grid-cols-4 gap-6">
-
-<a href="pages/subjects.html"
-class="card glass rounded-3xl p-8">
-
-<h2 class="text-2xl font-semibold">
-
-Subjects
+📚 Subjects
 
 </h2>
 
-<p class="mt-3 text-slate-400">
+<p>
 
 All BCS Subjects
 
@@ -191,16 +111,17 @@ All BCS Subjects
 
 </a>
 
-<a href="pages/strategy.html"
-class="card glass rounded-3xl p-8">
+<a
+href="pages/strategy.html"
+class="card">
 
-<h2 class="text-2xl font-semibold">
+<h2>
 
-Strategy
+🎯 Strategy
 
 </h2>
 
-<p class="mt-3 text-slate-400">
+<p>
 
 Books & Resources
 
@@ -208,33 +129,35 @@ Books & Resources
 
 </a>
 
-<a href="pages/tracker.html"
-class="card glass rounded-3xl p-8">
+<a
+href="pages/tracker.html"
+class="card">
 
-<h2 class="text-2xl font-semibold">
+<h2>
 
-Study Tracker
+📈 Study Tracker
 
 </h2>
 
-<p class="mt-3 text-slate-400">
+<p>
 
-Track Progress
+Daily Progress
 
 </p>
 
 </a>
 
-<a href="pages/planner.html"
-class="card glass rounded-3xl p-8">
+<a
+href="pages/planner.html"
+class="card">
 
-<h2 class="text-2xl font-semibold">
+<h2>
 
-Planner
+📅 Planner
 
 </h2>
 
-<p class="mt-3 text-slate-400">
+<p>
 
 Calendar & Notes
 
@@ -242,47 +165,34 @@ Calendar & Notes
 
 </a>
 
-</div>
+</section>
+
+<section class="quote">
+
+<h3>
+
+Quote of the Day
+
+</h3>
+
+<p id="quote">
+
+Stay hungry. Stay foolish.
+
+</p>
+
+</section>
 
 </main>
 
-<script>
+<footer>
 
-function updateClock(){
+Made with ❤️ by Soikat
 
-const now=new Date();
+</footer>
 
-document.getElementById("todayDate").innerHTML=
-now.toLocaleDateString("en-GB",{
-
-weekday:"long",
-day:"numeric",
-month:"long",
-year:"numeric",
-timeZone:"Asia/Dhaka"
-
-});
-
-document.getElementById("liveTime").innerHTML=
-now.toLocaleTimeString("en-US",{
-
-hour:"2-digit",
-minute:"2-digit",
-second:"2-digit",
-hour12:true,
-timeZone:"Asia/Dhaka"
-
-});
-
-}
-
-updateClock();
-
-setInterval(updateClock,1000);
-
-lucide.createIcons();
-
-</script>
+<script src="assets/js/app.js"></script>
 
 </body>
+
 </html>
