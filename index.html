@@ -2,196 +2,111 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soikat BCS Hub</title>
+    <meta name="description" content="A premium personal BCS study hub." />
+    <meta name="theme-color" content="#0D1117" />
 
-<title>Soikat BCS Hub</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="assets/css/style.css">
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header class="header">
+    <div class="app">
 
-<div class="container">
+        <!-- ================= HEADER ================= -->
+        <header class="header">
 
-<a href="index.html" class="logo">
+            <a href="index.html" class="logo">
+                <span class="logo-mark"></span>
+                <span class="logo-text">
+                    <h1>SOIKAT BCS HUB</h1>
+                    <small>Premium Personal Study Workspace</small>
+                </span>
+            </a>
 
-<div class="logo-icon">
+            <div class="clock">
+                <span id="weekday"></span>
+                <span id="date"></span>
+                <span id="time"></span>
+            </div>
 
-🎓
+        </header>
 
-</div>
+        <!-- ================= SEARCH ================= -->
+        <section class="search-section">
 
-<div>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search subjects, notes, strategies..."
+                autocomplete="off">
 
-<h2>Soikat BCS Hub</h2>
+        </section>
 
-<p>Your Personal Study Hub</p>
+        <!-- ================= DASHBOARD ================= -->
+        <main class="dashboard">
 
-</div>
+            <a href="pages/subjects.html" class="card">
+                <h2>Subjects</h2>
+                <p>Browse all study materials.</p>
+            </a>
 
-</a>
+            <a href="pages/strategy.html" class="card">
+                <h2>Strategy</h2>
+                <p>Preparation roadmap and resources.</p>
+            </a>
 
-<div class="search">
+            <a href="pages/tracker.html" class="card">
+                <h2>Study Tracker</h2>
+                <p>Track your daily progress.</p>
+            </a>
 
-<input
-type="text"
-placeholder="Search subjects, notes...">
+            <a href="pages/planner.html" class="card">
+                <h2>Planner</h2>
+                <p>Plan your study sessions.</p>
+            </a>
 
-</div>
+        </main>
 
-</div>
+        <!-- ================= QUOTE ================= -->
+        <section class="quote-card">
 
-</header>
+            <blockquote id="quote">
+                Discipline beats motivation.
+            </blockquote>
 
-<main class="container">
+        </section>
 
-<section class="topbar">
+        <!-- ================= FOOTER ================= -->
+        <footer class="footer">
 
-<div>
+            <span>Built for BCS Aspirants</span>
 
-<p class="small">
+            <span>Version 0.1.0</span>
 
-Today
+        </footer>
 
-</p>
+    </div>
 
-<h2 id="todayDate">
-
-Loading...
-
-</h2>
-
-</div>
-
-<div>
-
-<p class="small">
-
-Time
-
-</p>
-
-<h2 id="liveTime">
-
-Loading...
-
-</h2>
-
-</div>
-
-</section>
-
-<section class="dashboard">
-
-<a
-href="pages/subjects.html"
-class="card">
-
-<h2>
-
-📚 Subjects
-
-</h2>
-
-<p>
-
-All BCS Subjects
-
-</p>
-
-</a>
-
-<a
-href="pages/strategy.html"
-class="card">
-
-<h2>
-
-🎯 Strategy
-
-</h2>
-
-<p>
-
-Books & Resources
-
-</p>
-
-</a>
-
-<a
-href="pages/tracker.html"
-class="card">
-
-<h2>
-
-📈 Study Tracker
-
-</h2>
-
-<p>
-
-Daily Progress
-
-</p>
-
-</a>
-
-<a
-href="pages/planner.html"
-class="card">
-
-<h2>
-
-📅 Planner
-
-</h2>
-
-<p>
-
-Calendar & Notes
-
-</p>
-
-</a>
-
-</section>
-
-<section class="quote">
-
-<h3>
-
-Quote of the Day
-
-</h3>
-
-<p id="quote">
-
-Stay hungry. Stay foolish.
-
-</p>
-
-</section>
-
-</main>
-
-<footer>
-
-Made with ❤️ by Soikat
-
-</footer>
-
-<script src="assets/js/app.js"></script>
+    <!-- JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
