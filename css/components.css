@@ -72,6 +72,105 @@
     position: relative;
     overflow: hidden;
 }
+/* ===== Card Header ===== */
+
+.card-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:2rem;
+
+}
+
+.icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.icon svg{
+
+    width:24px;
+
+    height:24px;
+
+}
+
+.blue{
+
+    background:#58A6FF22;
+
+    color:#58A6FF;
+
+}
+
+.orange{
+
+    background:#D2992222;
+
+    color:#D29922;
+
+}
+
+.green{
+
+    background:#3FB95022;
+
+    color:#3FB950;
+
+}
+
+.purple{
+
+    background:#A371F722;
+
+    color:#A371F7;
+
+}
+
+.arrow{
+
+    font-size:24px;
+
+    color:var(--text-muted);
+
+    transition:.25s;
+
+}
+
+.card:hover .arrow{
+
+    transform:translateX(6px);
+
+    color:var(--primary);
+
+}
+
+.card h2{
+
+    margin-bottom:12px;
+
+}
+
+.card p{
+
+    line-height:1.7;
+
+}
 
 .card::before {
     content: "";
