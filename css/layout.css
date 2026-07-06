@@ -25,6 +25,46 @@
     margin-bottom: 2.5rem;
 }
 
+/* Paste starts here */
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-muted);
+    padding: 10px 16px;
+    border-radius: 10px;
+    transition: var(--transition);
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    background: var(--surface);
+    color: var(--text);
+}
+
+.nav-link.active {
+    background: var(--surface);
+    color: var(--primary);
+    border: 1px solid var(--border);
+}
+
+/* ---------- Logo ---------- */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* ---------- Logo ---------- */
 
 .logo {
