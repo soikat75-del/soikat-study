@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soikat Study Hub</title>
 
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+        }
+
+        .container{
+            max-width:1200px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        h1{
+            font-size:42px;
+            margin-bottom:10px;
+        }
+
+        p{
+            color:#cbd5e1;
+            margin-bottom:30px;
+        }
+
+        .search{
+            width:100%;
+            padding:15px;
+            border:none;
+            border-radius:12px;
+            font-size:16px;
+            margin-bottom:35px;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:30px;
+            border-radius:18px;
+            cursor:pointer;
+            transition:.3s;
+            text-align:center;
+        }
+
+        .card:hover{
+            transform:translateY(-6px);
+            background:#2563eb;
+        }
+
+        .emoji{
+            font-size:45px;
+            margin-bottom:15px;
+        }
+
+        h2{
+            font-size:22px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📚 Soikat Study Hub</h1>
+
+<p>Your Personal Study Library</p>
+
+<input class="search" placeholder="Search subject...">
+
+<div class="grid">
+
+<div class="card">
+<div class="emoji">🧬</div>
+<h2>Biology</h2>
+</div>
+
+<div class="card">
+<div class="emoji">⚗️</div>
+<h2>Chemistry</h2>
+</div>
+
+<div class="card">
+<div class="emoji">⚛️</div>
+<h2>Physics</h2>
+</div>
+
+<div class="card">
+<div class="emoji">💻</div>
+<h2>ICT</h2>
+</div>
+
+<div class="card">
+<div class="emoji">📖</div>
+<h2>Bangla</h2>
+</div>
+
+<div class="card">
+<div class="emoji">🇬🇧</div>
+<h2>English</h2>
+</div>
+
+</div>
+
+</div>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
