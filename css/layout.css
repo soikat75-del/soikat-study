@@ -133,18 +133,64 @@
 
 /* ---------- Search ---------- */
 
-.search-section input {
-    width: 100%;
-    height: 56px;
+.search-section{
 
-    padding: 0 1.25rem;
+    position:relative;
 
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
+    margin-bottom:2.5rem;
 
-    background: var(--surface);
+}
 
-    color: var(--text);
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    height:60px;
+
+    padding:0 20px;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    color:var(--text);
+
+    font-size:16px;
+
+}
+
+.search-box input::placeholder{
+
+    color:var(--text-muted);
+
+}
+
+.search-icon{
+
+    width:20px;
+
+    height:20px;
+
+    color:var(--text-muted);
+
+    flex-shrink:0;
+
 }
 
 /* ---------- Dashboard ---------- */
