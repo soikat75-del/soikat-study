@@ -1,53 +1,66 @@
 const subjects = [
     {
         name: "Bangla",
-        description: "Grammar, Literature & Language",
+        icon: "📘",
         chapters: 36,
-        progress: 0,
-        icon: "book"
+        progress: 72,
+        description: "Grammar • Literature • Language"
     },
     {
         name: "English",
-        description: "Grammar, Vocabulary & Literature",
+        icon: "📗",
         chapters: 28,
-        progress: 0,
-        icon: "globe"
+        progress: 45,
+        description: "Grammar • Vocabulary • Literature"
     },
     {
         name: "Bangladesh Affairs",
-        description: "History, Constitution & Economy",
+        icon: "🇧🇩",
         chapters: 22,
-        progress: 0,
-        icon: "flag"
+        progress: 15,
+        description: "History • Constitution • Economy"
     },
     {
         name: "International Affairs",
-        description: "World Politics & Organizations",
+        icon: "🌍",
         chapters: 18,
         progress: 0,
-        icon: "earth"
+        description: "World Politics • Organizations"
     }
 ];
 
 const grid = document.querySelector(".subjects-grid");
 
-subjects.forEach(subject => {
+function createSubjectCard(subject) {
 
-    grid.innerHTML += `
+    return `
         <article class="subject-card">
 
-            <div class="subject-icon"></div>
+            <div class="subject-icon">
+                ${subject.icon}
+            </div>
 
             <h2>${subject.name}</h2>
 
             <p>${subject.description}</p>
 
-            <div class="subject-meta">
+            <div class="progress-bar">
+                <div class="progress-fill"
+                     style="width:${subject.progress}%">
+                </div>
+            </div>
+
+            <div class="subject-footer">
+
                 <span>${subject.chapters} Chapters</span>
-                <span>${subject.progress}%</span>
+
+                <span>${subject.progress}% Complete</span>
+
             </div>
 
         </article>
     `;
 
-});
+}
+
+grid.innerHTML = subjects.map(createSubjectCard).join("");
