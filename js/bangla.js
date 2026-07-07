@@ -1,54 +1,88 @@
 const notes = [
-
-    "ধ্বনি",
-    "বর্ণ",
-    "সন্ধি",
-    "সমাস",
-    "কারক",
-    "প্রত্যয়",
-    "উপসর্গ",
-    "বাক্য",
-    "বানান",
-    "এককথায় প্রকাশ",
-    "বাগধারা",
-    "সাহিত্য"
-
+{
+    title: "ধ্বনি",
+    content: `
+        <p>এখানে ধ্বনির সম্পূর্ণ নোট থাকবে।</p>
+    `
+},
+{
+    title: "বর্ণ",
+    content: `
+        <p>এখানে বর্ণের সম্পূর্ণ নোট থাকবে।</p>
+    `
+},
+{
+    title: "সন্ধি",
+    content: `
+        <p>এখানে সন্ধির সম্পূর্ণ নোট থাকবে।</p>
+    `
+},
+{
+    title: "সমাস",
+    content: `
+        <p>এখানে সমাসের সম্পূর্ণ নোট থাকবে।</p>
+    `
+}
 ];
 
-const container = document.querySelector(".notes-list");
+const list = document.getElementById("notesList");
 
-function renderNotes(data){
+function renderNotes() {
 
-    container.innerHTML = "";
+    list.innerHTML = "";
 
-    data.forEach(note=>{
+    notes.forEach((note, index) => {
 
-        container.innerHTML += `
-            <div class="note-card">
-                ${note}
+        list.innerHTML += `
+        <div class="note-item">
+
+            <button class="note-header">
+
+                <span>${note.title}</span>
+
+                <span class="arrow">+</span>
+
+            </button>
+
+            <div class="note-content">
+
+                ${note.content}
+
             </div>
+
+        </div>
         `;
+
+    });
+
+    initAccordion();
+
+}
+
+function initAccordion(){
+
+    const headers = document.querySelectorAll(".note-header");
+
+    headers.forEach(header=>{
+
+        header.addEventListener("click",()=>{
+
+            const item = header.parentElement;
+
+            const opened = document.querySelector(".note-item.active");
+
+            if(opened && opened!==item){
+
+                opened.classList.remove("active");
+
+            }
+
+            item.classList.toggle("active");
+
+        });
 
     });
 
 }
 
-renderNotes(notes);
-
-const search = document.getElementById("noteSearch");
-
-search.addEventListener("input",()=>{
-
-    const value = search.value.toLowerCase();
-
-    renderNotes(
-
-        notes.filter(note=>
-
-            note.toLowerCase().includes(value)
-
-        )
-
-    );
-
-});
+renderNotes();
