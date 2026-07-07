@@ -1,0 +1,42 @@
+.page-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+    margin-bottom:40px;
+
+}
+
+.subject-search{
+
+    margin-bottom:32px;
+
+}
+
+.subject-search input{
+
+    width:100%;
+
+    padding:14px 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#161B22;
+
+    color:#fff;
+
+    font-size:15px;
+
+}
+
+.notes-list{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:16px;
+
+}
