@@ -1,3 +1,73 @@
+.note-item{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+}
+
+.note-header{
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    color:var(--text);
+
+    padding:20px 24px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.note-content{
+
+    display:none;
+
+    padding:0 24px 24px;
+
+    color:var(--text-muted);
+
+    line-height:1.8;
+
+}
+
+.note-item.active .note-content{
+
+    display:block;
+
+}
+
+.note-item.active .arrow{
+
+    transform:rotate(45deg);
+
+}
+
+.arrow{
+
+    transition:.25s;
+
+    font-size:20px;
+
+}
+
 .page-header{
 
     display:flex;
