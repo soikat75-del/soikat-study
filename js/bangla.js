@@ -1,28 +1,49 @@
 const notes = [
-{
-    title: "ধ্বনি",
-    content: `
-        <p>এখানে ধ্বনির সম্পূর্ণ নোট থাকবে।</p>
-    `
-},
-{
-    title: "বর্ণ",
-    content: `
-        <p>এখানে বর্ণের সম্পূর্ণ নোট থাকবে।</p>
-    `
-},
-{
-    title: "সন্ধি",
-    content: `
-        <p>এখানে সন্ধির সম্পূর্ণ নোট থাকবে।</p>
-    `
-},
-{
-    title: "সমাস",
-    content: `
-        <p>এখানে সমাসের সম্পূর্ণ নোট থাকবে।</p>
-    `
-}
+    {
+        title: "ধ্বনি",
+        content: `
+            <h3>ধ্বনি</h3>
+
+            <p>এখানে ধ্বনির সম্পূর্ণ নোট থাকবে।</p>
+
+            <!-- Image Example -->
+            <!-- <img src="../assets/images/bangla/dhoni.webp" alt="ধ্বনি"> -->
+
+            <!-- PDF Example -->
+            <!--
+            <a href="../assets/pdf/bangla/dhoni.pdf" target="_blank">
+                Open PDF
+            </a>
+            -->
+        `
+    },
+
+    {
+        title: "বর্ণ",
+        content: `
+            <h3>বর্ণ</h3>
+
+            <p>এখানে বর্ণের সম্পূর্ণ নোট থাকবে।</p>
+        `
+    },
+
+    {
+        title: "সন্ধি",
+        content: `
+            <h3>সন্ধি</h3>
+
+            <p>এখানে সন্ধির সম্পূর্ণ নোট থাকবে।</p>
+        `
+    },
+
+    {
+        title: "সমাস",
+        content: `
+            <h3>সমাস</h3>
+
+            <p>এখানে সমাসের সম্পূর্ণ নোট থাকবে।</p>
+        `
+    }
 ];
 
 const list = document.getElementById("notesList");
